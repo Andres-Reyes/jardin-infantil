@@ -15,6 +15,7 @@ import { PagosComponent } from './componentes/pagos/pagos.component';
 import { ChatComponent } from './componentes/chat/chat.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +30,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     PagosComponent,
     ChatComponent,
     NavbarComponent,
+    
    
   ],
   imports: [
