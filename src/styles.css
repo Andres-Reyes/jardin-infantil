@@ -13,6 +13,15 @@ footer {
     width: 100%;
 }
 
+#nombre {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#titulo {
+    font-family: courier, arial, helvética;
+    text-align: center
+}
+
 body {
     padding-bottom: 50px;
 }
