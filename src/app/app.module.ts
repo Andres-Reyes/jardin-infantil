@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+// componentes
 import { AppComponent } from './app.component';
-
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ActividadesComponent } from './componentes/actividades/actividades.component';
 import { CronogramaComponent } from './componentes/cronograma/cronograma.component';
@@ -14,8 +13,8 @@ import { InicioSesionComponent } from './componentes/inicio-sesion/inicio-sesion
 import { PagosComponent } from './componentes/pagos/pagos.component';
 import { ChatComponent } from './componentes/chat/chat.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-
-
+// rutas
+import {APP_ROUTING} from './app.routes';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,11 +29,10 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     PagosComponent,
     ChatComponent,
     NavbarComponent,
-    
-   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTING,
   ],
   providers: [],
   bootstrap: [AppComponent]
