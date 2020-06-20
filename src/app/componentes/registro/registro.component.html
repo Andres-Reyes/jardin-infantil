@@ -1,1 +1,84 @@
-<p>registro works!</p>
+<form><br>
+    <h3>REGISTRO USUARIO </h3><br>
+
+    <div class="row">
+        <div class="col">
+            <label for="formGroupExampleInput">USUARIO </label>
+            <input type="email" class="form-control col-md-9" aria-describedby="emailHelp" id="emailU">
+        </div>
+        <div class="col">
+            <label for="formGroupExampleInput">CONTRASEÑA </label>
+            <input class="form-control col-md-9" type="password" id="passwordU">
+        </div><br>
+    </div>
+    <a class="btn btn-danger" onclick="signUp()">REGISTRAR USUARIO</a><br>
+    <hr>
+
+    <h3>DATOS DEL PADRE DE FAMILIA </h3><br>
+
+    <div class="row">
+
+        <div class="col">
+
+            <label for="formGroupExampleInput">NOMBRES </label>
+            <input type="text" class="form-control col-md-9" id="nombresP" aria-describedby="emailHelp">
+        </div>
+        <div class="col">
+            <label for="formGroupExampleInput">APELLIDOS </label>
+            <input type="text" class="form-control col-md-9" id="apellidosP" aria-describedby="emailHelp">
+        </div>
+
+    </div><br>
+    <div class="row" id="">
+        <div class="col">
+            <label for="formGroupExampleInput">TELEFONO</label>
+            <input type="text" class="form-control col-md-9" id="telefono" aria-describedby="emailHelp">
+        </div>
+        <div class="col">
+            <label for="formGroupExampleInput">DIRECCION</label>
+            <input type="text" class="form-control col-md-9" id="direccion" aria-describedby="emailHelp">
+        </div>
+    </div><br>
+    <hr>
+    <h3>DATOS DEL ESTUDIANTE</h3><br>
+    <div class="row">
+        <div class="col">
+            <label for="formGroupExampleInput">NOMBRES </label>
+            <input type="text" class="form-control col-md-9" id="nombres" aria-describedby="emailHelp">
+        </div>
+        <div class="col">
+            <label for="formGroupExampleInput">APELLIDOS </label>
+            <input type="text" class="form-control col-md-9" id="apellidos" aria-describedby="emailHelp">
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col">
+            <label for="formGroupExampleInput">DOCENTE</label>
+            <select class="form-control col-md-9" id="selectD">
+             <option ></option>
+             <option value="Leidy Camargo">Leidy Camargo</option>
+             <option value="Yaneth Valderrama">Yaneth Valderrama</option>   
+             <option value="Rocio Corrales">Rocio Corrales</option>  
+             <option value="Alba Barreto">Alba Barreto</option>         
+             </select>
+        </div>
+        <div class="col">
+            <label for="formGroupExampleInput">NIVEL</label>
+            <select class="form-control col-md-9" id="selectN">
+             <option ></option>
+             <option value="Parvulos">Parvulos</option>
+             <option value="Pre-Jardin">Pre-Jardin</option>
+             <option value="Jardin">Jardin</option>  
+             <option value="Transicion">Transicion</option>         
+             </select>
+        </div>
+    </div><br>
+    <br>
+    <input type="file" id="inputFileToLoad" class="form-control" placeholder="photo" />
+    <i class="glyphicon glyphicon-fire form-control-feedback"></i>
+    <input type="text" id="response" class="form-control" placeholder="Base-64 value" />
+    <i class="glyphicon glyphicon-globe form-control-feedback"></i><br>
+    <img id="preview" class="card-img-top" alt="..."><br>
+    <a class="btn btn-danger" id="btnImg">mostrar imagen</a>
+    <a class="btn btn-danger" onclick="Registrar()">REGISTRAR INFORMACION</a>
+</form><br>
