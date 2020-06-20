@@ -4,6 +4,10 @@
     justify-content: center;
 }
 
+#titulo {
+    text-align: center
+}
+
 body {
     padding-bottom: 50px;
 }
