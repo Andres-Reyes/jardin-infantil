@@ -15,6 +15,7 @@ import { ChatComponent } from './componentes/chat/chat.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 // rutas
 import {APP_ROUTING} from './app.routes';
+import { FooterComponent } from './shared/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +30,7 @@ import {APP_ROUTING} from './app.routes';
     PagosComponent,
     ChatComponent,
     NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

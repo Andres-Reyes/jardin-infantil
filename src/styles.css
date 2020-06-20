@@ -4,8 +4,13 @@
     justify-content: center;
 }
 
-#titulo {
-    text-align: center
+footer {
+    color: #110D0D;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0px;
+    height: 4%;
+    width: 100%;
 }
 
 body {

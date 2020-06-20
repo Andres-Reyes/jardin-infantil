@@ -12,7 +12,7 @@ const APP_ROUTES: Routes = [
      {path: 'Inicio', component : InicioComponent},
      {path: 'Actividades', component : ActividadesComponent},
      {path: 'Cronograma', component : CronogramaComponent},
-     {path: 'Docentes', component : DocentesComponent},
+     {path: 'Equipo', component : DocentesComponent},
      {path: 'Informacion', component : InformacionComponent},
      {path: 'Registro', component : RegistroComponent},
      {path: 'Actualizar', component : ActualizacionComponent},
