@@ -13,12 +13,26 @@ footer {
     width: 100%;
 }
 
+#bordes {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+#liCronograma {
+    height: auto;
+    width: 80px;
+}
+
 #carrucel {
     height: 350px;
 }
 
 #nombre {
     font-family: 'Times New Roman', Times, serif;
+    height: auto;
+    width: 100%;
 }
 
 #titulo {
