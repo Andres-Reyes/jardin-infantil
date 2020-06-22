@@ -8,6 +8,8 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { ActualizacionComponent } from './componentes/actualizacion/actualizacion.component';
 import { InicioSesionComponent } from './componentes/inicio-sesion/inicio-sesion.component';
 import { PagosComponent } from './componentes/pagos/pagos.component';
+import { TarjetaInicioComponent} from './componentes/tarjeta-inicio/tarjeta-inicio.component';
+import { DocenteComponent } from './componentes/docente/docente.component';
 const APP_ROUTES: Routes = [
      {path: 'Inicio', component : InicioComponent},
      {path: 'Actividades', component : ActividadesComponent},
@@ -18,6 +20,8 @@ const APP_ROUTES: Routes = [
      {path: 'Actualizar', component : ActualizacionComponent},
      {path: 'InicioSesion', component : InicioSesionComponent},
      {path: 'Pagos', component : PagosComponent},
+     {path: 'Docente/:id', component : DocenteComponent},
+     {path: 'Tarjeta/:id', component : TarjetaInicioComponent},
      {path: '**', pathMatch: 'full', redirectTo: 'Inicio'}
 ];
 
