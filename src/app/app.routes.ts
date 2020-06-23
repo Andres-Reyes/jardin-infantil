@@ -20,8 +20,8 @@ const APP_ROUTES: Routes = [
      {path: 'Actualizar', component : ActualizacionComponent},
      {path: 'InicioSesion', component : InicioSesionComponent},
      {path: 'Pagos', component : PagosComponent},
-     {path: 'Docente/:id', component : DocenteComponent},
-     {path: 'Tarjeta/:id', component : TarjetaInicioComponent},
+     {path: 'Docentes/Docente/:id', component : DocenteComponent},
+     {path: 'Inicio/Tarjeta/:id', component : TarjetaInicioComponent},
      {path: '**', pathMatch: 'full', redirectTo: 'Inicio'}
 ];
 
