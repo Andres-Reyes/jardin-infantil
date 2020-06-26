@@ -9,6 +9,7 @@ import { ActualizacionComponent } from './componentes/actualizacion/actualizacio
 import { InicioSesionComponent } from './componentes/inicio-sesion/inicio-sesion.component';
 import { PagosComponent } from './componentes/pagos/pagos.component';
 import { TarjetaInicioComponent} from './componentes/tarjeta-inicio/tarjeta-inicio.component';
+import { RegistroUsuarioComponent} from './componentes/registro-usuario/registro-usuario.component';
 import { DocenteComponent } from './componentes/docente/docente.component';
 const APP_ROUTES: Routes = [
      {path: 'Inicio', component : InicioComponent},
@@ -19,6 +20,7 @@ const APP_ROUTES: Routes = [
      {path: 'Registro', component : RegistroComponent},
      {path: 'Actualizar', component : ActualizacionComponent},
      {path: 'InicioSesion', component : InicioSesionComponent},
+     {path: 'RegistroUsuario', component : RegistroUsuarioComponent},
      {path: 'Pagos', component : PagosComponent},
      {path: 'Docentes/Docente/:id', component : DocenteComponent},
      {path: 'Inicio/Tarjeta/:id', component : TarjetaInicioComponent},

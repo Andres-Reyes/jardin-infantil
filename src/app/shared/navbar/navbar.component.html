@@ -31,10 +31,21 @@
 
 
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <a class="nav-link" [routerLink]="['InicioSesion']" type="button" id="inicioSesion" data-toggle="modal" data-target="#exampleModal"><img src="assets/usuario.png" width="40" height="40" alt=""></a>
+        <ul class="navbar-nav mx-auto" id="ulNavbar">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['InicioSesion']" type="button" *ngIf="!isLogged" id="inicioSesion"><img src="assets/usuario.png" width="40" height="40" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['RegistroUsuario']" type="button" *ngIf="isLogged" id="inicioSesion"><img src="assets/registrarU.png" width="40" height="40" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" type="button" *ngIf="isLogged" id="inicioSesion"><img src="assets/cerrarSesion.png" width="40" height="40" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <small class="nav-link">{{user.email}}</small>
+            </li>
+        </ul>
 
-        </form>
     </div>
 
 

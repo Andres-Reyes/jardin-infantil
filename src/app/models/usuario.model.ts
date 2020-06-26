@@ -1,4 +1,4 @@
 export class UsuarioModel{
      email: string;
-contraseña: string;
+     contrasena: string;
 }

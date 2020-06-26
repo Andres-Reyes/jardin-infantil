@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "jardin-la-casita-encantada": {
+      "hosting": {
+        "jardin-infantil": [
+          "jardin-la-casita-encantada"
+        ]
+      }
+    }
+  }
+}

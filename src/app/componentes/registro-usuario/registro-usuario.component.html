@@ -1,22 +1,22 @@
-<div class="limiter animated fadeInDownBig">
+<div class="limiter animated fadeInRight">
     <div class="container-login100">
         <div class="wrap-login100 p-t-50 p-b-90">
-            <form (ngSubmit)="ingresoUsuarios()" [formGroup]="ingresoForm" class="login100-form validate-form flex-sb flex-w">
+            <form (ngSubmit)="registroUsuarios()" [formGroup]="registroForm" class="login100-form validate-form flex-sb flex-w">
 
                 <span class="login100-form-title p-b-51">
-                     INICIAR SESIÓN
+                     CREAR UNA CUENTA
                  </span>
 
 
-                <div class="wrap-input100 m-b-16">
-                    <input class="input100" type="email" formControlName="email" name="username" placeholder="USUARIO">
+                <div class="wrap-input100 m-b-16 form-group">
+                    <input class="input100" type="email" name="email" formControlName="email" placeholder="CORREO">
 
                     <span class="focus-input100"></span>
                 </div>
 
 
-                <div class="wrap-input100 m-b-16" data-validate="Password is required">
-                    <input class="input100" type="password" formControlName="password" placeholder="CONTRASEÑA">
+                <div class="wrap-input100 m-b-16 form-group" data-validate="Password is required">
+                    <input class="input100" type="password" name="password" formControlName="password" placeholder="CONTRASEÑA">
                     <span class="focus-input100"></span>
                 </div>
 
@@ -33,7 +33,7 @@
 
                 <div class="container-login100-form-btn m-t-17">
                     <button class="login100-form-btn" type="submit">
-                         Ingresar
+                         Crear cuenta
                      </button>
                 </div>
 
