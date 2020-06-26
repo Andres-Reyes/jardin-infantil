@@ -1,20 +1,14 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { auth } from 'firebase/app';
 import { User } from 'firebase';
 import { first } from 'rxjs/operators';
 @Injectable()
 export class AuthService {
 
-/*   private url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=';
-  private apiKey = 'AIzaSyAZeDXEnRGcImRRrzb_Hm0RQwgnrPAObU8'; */
 
-//https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]
-  //ingreso de usuario
-  //https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=[API_KEY]
 
 private user: User;
-  constructor(private afAuth: AngularFireAuth) { }
+  constructor(public afAuth: AngularFireAuth) { }
 
 
   async logout(){

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { FormGroup, FormControl } from '@angular/forms';
 import { AuthService} from '../../service/auth.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class InicioSesionComponent implements OnInit {
     email: new FormControl(''),
     password: new FormControl(''),
   });
-  constructor(private auth: AuthService) { }
+  constructor(private auth: AuthService, private router: Router) { }
 
   ngOnInit(): void {
 
@@ -22,8 +23,15 @@ export class InicioSesionComponent implements OnInit {
 
   }
 
-  ingresoUsuarios(){
+ async ingresoUsuarios(){
     const {email, password} = this.ingresoForm.value;
-    this.auth.ingresoUsuario(email, password);
+    try{
+      const user = await this.auth.ingresoUsuario(email, password);
+      if(user){
+      this.router.navigate(['/Inicio']);
       }
+    }catch (error){
+console.log(error);
+    }
+ }
 }

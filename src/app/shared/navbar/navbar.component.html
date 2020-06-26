@@ -31,21 +31,28 @@
 
 
         </ul>
-        <ul class="navbar-nav mx-auto" id="ulNavbar">
+        <ul class="navbar-nav " id="ulNavbar" *ngIf="user$|async as user; else login">
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="['InicioSesion']" type="button" *ngIf="!isLogged" id="inicioSesion"><img src="assets/usuario.png" width="40" height="40" alt=""></a>
+                <a class="nav-link" [routerLink]="['Registro']" type="button" *ngIf="user" id="inicioSesion"><img src="assets/registro.png" width="40" height="40" alt=""></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="['RegistroUsuario']" type="button" *ngIf="isLogged" id="inicioSesion"><img src="assets/registrarU.png" width="40" height="40" alt=""></a>
+                <a class="nav-link" [routerLink]="['Actualizar']" type="button" *ngIf="user" id="inicioSesion"><img src="assets/actualizar.png" width="40" height="40" alt=""></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" type="button" *ngIf="isLogged" id="inicioSesion"><img src="assets/cerrarSesion.png" width="40" height="40" alt=""></a>
+                <a class="nav-link" [routerLink]="['RegistroUsuario']" type="button" *ngIf="user" id="inicioSesion"><img src="assets/registrarU.png" width="40" height="40" alt=""></a>
             </li>
             <li class="nav-item">
-                <small class="nav-link">{{user.email}}</small>
+                <a class="nav-link" [routerLink]="['Inicio']" type="button" (click)=" onLogged()" *ngIf="user" id="inicioSesion"><img src="assets/cerrarSesion.png" width="40" height="40" alt=""></a>
             </li>
-        </ul>
 
+        </ul>
+        <ng-template #login>
+            <ul class="navbar-nav " id="ulNavbar">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['InicioSesion']" type="button" id="inicioSesion"><img src="assets/usuario.png" width="40" height="40" alt=""></a>
+                </li>
+            </ul>
+        </ng-template>
     </div>
 
 
