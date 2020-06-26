@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, EmailValidator } from '@angular/forms';
-import { AuthService} from '../../service/auth.service';
+import { AuthService} from '../../../service/auth.service';
 @Component({
   selector: 'app-registro-usuario',
   templateUrl: './registro-usuario.component.html',

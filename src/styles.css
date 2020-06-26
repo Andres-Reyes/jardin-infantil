@@ -1,5 +1,4 @@
 #botonesCentrados {
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -17,10 +16,19 @@ footer {
     display: none;
 }
 
-#regist {
+form {
+    font-family: courier, arial, helvética;
     margin: 0 auto;
     text-align: center;
-    align-content: center;
+    border-radius: 10px;
+    border: 1px solid #666666;
+    width: auto;
+}
+
+table {
+    font-family: courier, arial, helvética;
+    margin: 0 auto;
+    text-align: center;
     border-radius: 10px;
     border: 1px solid #666666;
     width: auto;

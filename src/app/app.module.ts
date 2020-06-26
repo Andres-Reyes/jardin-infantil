@@ -13,7 +13,7 @@ import { CronogramaComponent } from './componentes/cronograma/cronograma.compone
 import { DocentesComponent } from './componentes/docentes/docentes.component';
 import { InformacionComponent } from './componentes/informacion/informacion.component';
 import { RegistroComponent } from './componentes/registro/registro.component';
-import { ActualizacionComponent } from './componentes/actualizacion/actualizacion.component';
+import { ActualizacionComponent } from './componentes/admin/actualizacion/actualizacion.component';
 import { InicioSesionComponent } from './componentes/inicio-sesion/inicio-sesion.component';
 import { PagosComponent } from './componentes/pagos/pagos.component';
 import { ChatComponent } from './componentes/chat/chat.component';
@@ -23,8 +23,10 @@ import {APP_ROUTING} from './app.routes';
 import { FooterComponent } from './shared/footer/footer.component';
 import { DocenteComponent } from './componentes/docente/docente.component';
 import { TarjetaInicioComponent } from './componentes/tarjeta-inicio/tarjeta-inicio.component';
-import { RegistroUsuarioComponent } from './componentes/registro-usuario/registro-usuario.component';
+import { RegistroUsuarioComponent } from './componentes/admin/registro-usuario/registro-usuario.component';
 import { initializeApp } from 'firebase';
+import { ActividadesCargaComponent } from './componentes/admin/actividades-carga/actividades-carga.component';
+import { CronogramaCargaComponent } from './componentes/admin/cronograma-carga/cronograma-carga.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import { initializeApp } from 'firebase';
     DocenteComponent,
     TarjetaInicioComponent,
     RegistroUsuarioComponent,
+    ActividadesCargaComponent,
+    CronogramaCargaComponent,
 
   ],
   imports: [
