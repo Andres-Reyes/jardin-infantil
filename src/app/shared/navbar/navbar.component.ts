@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 export class NavbarComponent {
 
 public user$: Observable<any> = this.auth.afAuth.user;
+
   constructor(private auth: AuthService) { }
 
 

@@ -10,49 +10,62 @@
    </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto" id="ulNavbar">
-
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" [routerLink]="['Actividades']">ACTIVIDADES</a>
-            </li>
-
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" [routerLink]="['Equipo']">EQUIPO</a>
-            </li>
-
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" [routerLink]="['Cronograma']">CRONOGRAMA</a>
-            </li>
-
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" [routerLink]="['Informacion']">INFORMACION</a>
-            </li>
-
-
-
-        </ul>
-        <ul class="navbar-nav " id="ulNavbar" *ngIf="user$|async as user; else login">
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['Registro']" type="button" *ngIf="user" id="inicioSesion"><img src="assets/registro.png" width="40" height="40" alt=""></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['Actualizar']" type="button" *ngIf="user" id="inicioSesion"><img src="assets/actualizar.png" width="40" height="40" alt=""></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['RegistroUsuario']" type="button" *ngIf="user" id="inicioSesion"><img src="assets/registrarU.png" width="40" height="40" alt=""></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" [routerLink]="['Inicio']" type="button" (click)=" onLogged()" *ngIf="user" id="inicioSesion"><img src="assets/cerrarSesion.png" width="40" height="40" alt=""></a>
-            </li>
-
-        </ul>
         <ng-template #login>
+            <ul class="navbar-nav mr-auto" id="ulNavbar">
+
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="['Actividades']">ACTIVIDADES</a>
+                </li>
+
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="['Equipo']">EQUIPO</a>
+                </li>
+
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="['Cronograma']">CRONOGRAMA</a>
+                </li>
+
+                <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" [routerLink]="['Informacion']">INFORMACION</a>
+                </li>
+
+
+
+            </ul>
             <ul class="navbar-nav " id="ulNavbar">
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['InicioSesion']" type="button" id="inicioSesion"><img src="assets/usuario.png" width="40" height="40" alt=""></a>
                 </li>
             </ul>
         </ng-template>
+        <ul class="navbar-nav " id="ulNavbar" *ngIf="user$|async as user; else login ">
+            <li class="nav-item">
+                <a class="nav-link" type="button" *ngIf="user" id="inicioSesion"><img src="assets/actividades.png" width="40" height="40" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" type="button" *ngIf="user" id="inicioSesion"><img src="assets/docente.png" width="40" height="40" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" type="button" *ngIf="user" id="inicioSesion"><img src="assets/cronograma.png" width="40" height="40" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" type="button" *ngIf="user" id="inicioSesion"><img src="assets/informacion.png" width="40" height="40" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['Registro']" type="button" *ngIf="user" id="inicioSesion"><img src="assets/registro.png" width="40" height="40" alt=""></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['Actualizar']" type="button" *ngIf="user" id="inicioSesion"><img src="assets/actualizar.png" width="40" height="40" alt=""></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" [routerLink]="['RegistroUsuario']" type="button" *ngIf="user" id="inicioSesion"><img src="assets/registrarU.png" width="40" height="40" alt=""></a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" [routerLink]="['Inicio']" type="button" (click)=" onLogged()" *ngIf="user" id="inicioSesion"><img src="assets/cerrarSesion.png" width="40" height="40" alt=""></a>
+            </li>
+
+        </ul>
+
     </div>
 
 

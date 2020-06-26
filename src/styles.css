@@ -13,6 +13,19 @@ footer {
     width: 100%;
 }
 
+#oculto {
+    display: none;
+}
+
+#regist {
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    border: 1px solid #666666;
+    width: auto;
+}
+
 #bordes {
     border-color: black;
     border-width: 3px;
