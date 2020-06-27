@@ -2,9 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import {AngularFireAuthModule } from '@angular/fire/auth';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AuthService } from '../app/service/auth.service';
+import { CloudFirebaseService } from '../app/service/cloud-firebase.service';
 // componentes
 import { AppComponent } from './app.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
@@ -60,8 +62,10 @@ import { DocentesCargaComponent } from './componentes/admin/docentes-carga/docen
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
+    AngularFirestoreModule,
   ],
-  providers: [AuthService ],
+  providers: [AuthService,
+    CloudFirebaseService, ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
