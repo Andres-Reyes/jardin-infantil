@@ -12,7 +12,7 @@ import { ActividadesComponent } from './componentes/actividades/actividades.comp
 import { CronogramaComponent } from './componentes/cronograma/cronograma.component';
 import { DocentesComponent } from './componentes/docentes/docentes.component';
 import { InformacionComponent } from './componentes/informacion/informacion.component';
-import { RegistroComponent } from './componentes/registro/registro.component';
+import { RegistroComponent } from './componentes/admin/registro/registro.component';
 import { ActualizacionComponent } from './componentes/admin/actualizacion/actualizacion.component';
 import { InicioSesionComponent } from './componentes/inicio-sesion/inicio-sesion.component';
 import { PagosComponent } from './componentes/pagos/pagos.component';
@@ -27,6 +27,8 @@ import { RegistroUsuarioComponent } from './componentes/admin/registro-usuario/r
 import { initializeApp } from 'firebase';
 import { ActividadesCargaComponent } from './componentes/admin/actividades-carga/actividades-carga.component';
 import { CronogramaCargaComponent } from './componentes/admin/cronograma-carga/cronograma-carga.component';
+import { DocentesCargaComponent } from './componentes/admin/docentes-carga/docentes-carga.component';
+
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { CronogramaCargaComponent } from './componentes/admin/cronograma-carga/c
     RegistroUsuarioComponent,
     ActividadesCargaComponent,
     CronogramaCargaComponent,
+    DocentesCargaComponent,
+
 
   ],
   imports: [

@@ -1,1 +1,43 @@
-<p>actividades-carga works!</p>
+<hr>
+<h1 id="titulo">REGISTRO DE ACTIVIDADES</h1>
+<hr>
+<form [formGroup]="">
+    <div class="limiter animated fadeIn "><br>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <label for="formGroupExampleInput">NOMBRE </label>
+                    <input type="text" class="form-control col-md-9-center" id="nombres" aria-describedby="emailHelp">
+                </div>
+                <div class="col">
+                    <label for="formGroupExampleInput">RESPONSABLE</label>
+                    <select class="form-control col-md-9-center" id="selectN">
+                  <option ></option>
+                  <option value="Psicoorientadora">Psicoorientadora</option>
+                  <option value="Docente">Docente</option>
+                  <option value="Directora">Directora</option>  
+                  <option value="Profesional externo">Profesional externo</option>         
+                  </select>
+                </div>
+
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <label for="formGroupExampleInput">DESCRIPCION </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div><br>
+            <hr>
+            <input type="file" id="inputFileToLoad" class="form-control" placeholder="photo" /><br>
+            <i class="glyphicon glyphicon-fire form-control-feedback"></i>
+            <input type="text" id="response" class="form-control" placeholder="Base-64 value" id="oculto" /><br><br>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <a class="btn btn-outline-primary btn-block">REGISTRAR ACTIVIDAD</a>
+                </div>
+                <div class="col-4"></div>
+            </div><br>
+        </div>
+    </div>
+</form><br><br>

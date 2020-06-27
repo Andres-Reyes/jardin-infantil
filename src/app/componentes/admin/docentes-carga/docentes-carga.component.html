@@ -1,0 +1,55 @@
+<div class="animated fadeIn fast">
+    <hr>
+    <h1 id="titulo">REGISTRO DE PERSONAL</h1>
+    <hr>
+    <form [formGroup]="">
+        <div class="container">
+            <br>
+            <div class="row">
+
+                <div class="col">
+
+                    <label for="formGroupExampleInput">NOMBRES </label>
+                    <input type="text" class="form-control col-md-9-center" aria-describedby="emailHelp">
+                </div>
+                <div class="col">
+                    <label for="formGroupExampleInput">APELLIDOS </label>
+                    <input type="text" class="form-control col-md-9-center" aria-describedby="emailHelp">
+                </div>
+
+            </div><br>
+            <div class="col">
+                <label for="formGroupExampleInput">NIVEL</label>
+                <select class="form-control col-md-9-center" id="selectN">
+             <option ></option>
+             <option value="Parvulos">Parvulos</option>
+             <option value="Pre-Jardin">Pre-Jardin</option>
+             <option value="Jardin">Jardin</option>  
+             <option value="Transicion">Transicion</option>
+             <option value="Rectora">Rectora</option> 
+             <option value="Psicoorientadora">Psicoorientadora</option>  
+             <option value="Servicios Generales">Servicios Generales</option>         
+            </select>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <label for="formGroupExampleInput">ESTUDIOS </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div><br>
+            <input type="file" id="inputFileToLoad" class="form-control" placeholder="photo" /><br>
+            <i class="glyphicon glyphicon-fire form-control-feedback"></i>
+            <input type="text" id="response" class="form-control" placeholder="Base-64 value" id="oculto" />
+        </div>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <a class="btn btn-outline-primary btn-block">REGISTRAR</a>
+                </div>
+                <div class="col-4"></div><br>
+            </div>
+        </div><br>
+    </form><br><br>
+</div>
