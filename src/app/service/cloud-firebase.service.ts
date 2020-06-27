@@ -23,7 +23,10 @@ export class  CloudFirebaseService {
      }));
   }
 
-  addItem() {
+  listaItem() {
     return this.items;
+  }
+  agregarItem(item: Item) {
+    this.itemsCollection.add(item);
   }
 }

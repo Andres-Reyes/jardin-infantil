@@ -4,10 +4,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {AngularFireAuthModule } from '@angular/fire/auth';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
+
+
+
+// componentes
 import { environment } from '../environments/environment';
 import { AuthService } from '../app/service/auth.service';
 import { CloudFirebaseService } from '../app/service/cloud-firebase.service';
-// componentes
 import { AppComponent } from './app.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ActividadesComponent } from './componentes/actividades/actividades.component';

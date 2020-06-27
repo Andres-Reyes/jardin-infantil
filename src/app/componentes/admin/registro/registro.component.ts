@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CloudFirebaseService } from '../../../service/cloud-firebase.service';
 
 @Component({
   selector: 'app-registro',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroComponent implements OnInit {
 
-  constructor() { }
+  item: any = {
+uno: '',
+dos: '',
+tres: '',
+cuatro: '',
+cinco: '',
+seis: '',
+siete: '',
+ocho: '',
+nueve: '',
+  };
+
+  constructor(private servicio: CloudFirebaseService) { }
 
   ngOnInit(): void {
   }
-
+agregar(){
+  this.servicio.agregarItem(this.item);
+}
 }

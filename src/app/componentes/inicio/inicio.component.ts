@@ -9,7 +9,7 @@ import { CloudFirebaseService } from 'src/app/service/cloud-firebase.service';
 export class InicioComponent implements OnInit {
 items: any;
   constructor(private conexion: CloudFirebaseService) { 
-    this.conexion.addItem().subscribe(coleccion =>{
+    this.conexion.listaItem().subscribe(coleccion =>{
       this.items = coleccion;
       console.log('Registro:', this.items);
     });
