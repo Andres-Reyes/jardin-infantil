@@ -1,16 +1,26 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+
+  // importaciones tabla registro
 export interface Item { uno: string; dos: string; tres: string; cuatro: string; cinco: string;seis: string; siete: string; ocho: string; nueve: string };
 export interface ItemId extends Item { id: string; }
+
+// importaciones tabla actividades
+
+// importaciones tabla docentes
+
+// importaciones  tabla cronograma
+
+// importaciones tabla inicio
 @Injectable({
   providedIn: 'root'
 })
 export class  CloudFirebaseService {
   private itemsCollection: AngularFirestoreCollection<Item>;
   items: Observable<Item[]>;
-
+  private itemDoc: AngularFirestoreDocument<Item>;
   constructor(private readonly afs: AngularFirestore) {
     this.itemsCollection = afs.collection<Item>('Registro');
     this.items = this.itemsCollection.snapshotChanges().pipe(map(actions => {
@@ -28,5 +38,14 @@ export class  CloudFirebaseService {
   }
   agregarItem(item: Item) {
     this.itemsCollection.add(item);
+    console.log(' Registro exitoso');
+  }
+  eliminarItem(item){
+    this.itemDoc = this.afs.doc<Item>(`Registro/${item.id}`);
+    this.itemDoc.delete();
+  }
+  editarItem(item){
+    this.itemDoc = this.afs.doc<Item>(`Registro/${item.id}`);
+    this.itemDoc.update(item);
   }
 }

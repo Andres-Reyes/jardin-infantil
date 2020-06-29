@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CloudFirebaseService } from 'src/app/service/cloud-firebase.service';
+
 
 @Component({
   selector: 'app-inicio',
@@ -7,12 +7,8 @@ import { CloudFirebaseService } from 'src/app/service/cloud-firebase.service';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
-items: any;
-  constructor(private conexion: CloudFirebaseService) {
-    this.conexion.listaItem().subscribe(coleccion => {
-      this.items = coleccion;
-      console.log('Registro:', this.items);
-    });
+
+  constructor() {
   }
 
   ngOnInit(): void {

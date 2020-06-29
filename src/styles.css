@@ -64,3 +64,8 @@ table {
 body {
     padding-bottom: 50px;
 }
+
+#buttonesModificar {
+    height: 30px;
+    width: 30px;
+}
