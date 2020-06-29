@@ -30,12 +30,13 @@
             <li class="nav-item">
                 <a class="nav-link" type="button" id="inicioSesion"><img src="assets/registrarU.png" width="40" height="40" alt="" [routerLink]="['RegistroUsuario']"></a>
             </li>
-            <li class="nav-item ">
-                <a class="nav-link" [routerLink]="['Inicio']" type="button" (click)=" onLogged()" id="inicioSesion"><img src="assets/cerrarSesion.png" width="40" height="40" alt=""></a>
-            </li>
             <li class="nav-item btn-sm ml-auto">
                 <a class="nav-link">hola: {{isAdmin}}</a>
             </li>
+            <li class="nav-item ">
+                <a class="nav-link" [routerLink]="['Inicio']" type="button" (click)=" onLogged()" id="inicioSesion"><img src="assets/cerrarSesion.png" width="40" height="40" alt=""></a>
+            </li>
+
         </ul>
 
         <ng-template #usuario>
@@ -58,7 +59,7 @@
                     <a class="nav-link" [routerLink]="['Informacion']">INFORMACION</a>
                 </li>
                 <li class="nav-item" routerLinkActive="active">
-                    <a class="nav-link" [routerLink]="['Informacion']">PAGOS</a>
+                    <a class="nav-link" [routerLink]="['Pagos']">PAGOS</a>
                 </li>
 
                 <li class="nav-item ">
