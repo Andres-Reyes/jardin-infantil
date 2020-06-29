@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CloudFirebaseService } from 'src/app/service/cloud-firebase.service';
-import { Item } from '../../../service/cloud-firebase.service';
+import { Item } from '../../models/registro';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -34,7 +34,6 @@ export class ActualizacionComponent implements OnInit {
     });
   }
 modificar(item){
-
 }
 eliminar(item){
 this.conexion.eliminarItem(item);

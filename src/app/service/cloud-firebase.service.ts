@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
+import { Observable, from } from 'rxjs';
 import { map } from 'rxjs/operators';
-
+import {Item} from '../componentes/models/registro';
   // importaciones tabla registro
-export interface Item { uno: string; dos: string; tres: string; cuatro: string; cinco: string;seis: string; siete: string; ocho: string; nueve: string };
+
 export interface ItemId extends Item { id: string; }
 
 // importaciones tabla actividades
