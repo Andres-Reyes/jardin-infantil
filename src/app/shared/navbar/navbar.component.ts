@@ -13,7 +13,7 @@ export class NavbarComponent {
 public user$: Observable<any> = this.auth.afAuth.user;
 public isAdmin: any = null;
 public userUid: string = null;
-  constructor(private auth: AuthService) { 
+  constructor(private auth: AuthService) {
     this.getCurrentUser();
   }
   onLogged(){
