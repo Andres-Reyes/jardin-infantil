@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {AngularFireAuthModule } from '@angular/fire/auth';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
-
+import {AngularFireStorageModule} from '@angular/fire/storage';
 
 
 // componentes
@@ -66,6 +66,7 @@ import { DocentesCargaComponent } from './componentes/admin/docentes-carga/docen
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    AngularFireStorageModule,
   ],
   providers: [AuthService,
     CloudFirebaseService, ],

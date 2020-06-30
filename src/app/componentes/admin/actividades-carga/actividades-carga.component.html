@@ -28,9 +28,10 @@
                 </div>
             </div><br>
             <hr>
-            <input type="file" id="inputFileToLoad" class="form-control" placeholder="photo" /><br>
-            <i class="glyphicon glyphicon-fire form-control-feedback"></i>
-            <input type="text" id="response" class="form-control" placeholder="Base-64 value" id="oculto" /><br><br>
+            <div class="container">
+                <h5> SELECCIONAR IMAGEN: </h5>
+                <input type="file" accept=".jpg, .png" (change)="onUpload($event)">
+            </div><br>
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
